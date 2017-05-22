@@ -94,6 +94,7 @@
   "scripts": {
     "postinstall": "cd app && npm install --no-optional",
     "start": "npm run compile && npm run copy && cross-env DEBUG=1 npm --prefix app/ start",
+	"start!": "rimraf %AppData%/Electron-Shell && npm run compile && npm run copy && cross-env DEBUG=1 npm --prefix app/ start",
     "compile": "babel --ignore node_modules/ --compact true --source-maps inline --minified --extensions .jsx app/ -d app/",
     "copy": "npm run -s copy-lib && npm run -s copy-services && npm run -s copy-ui",
     "copy-lib": "cp -R app/lib/ app/node_modules/electron-shell-lib/",
