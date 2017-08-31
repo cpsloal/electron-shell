@@ -38,7 +38,7 @@ const createMainWindow = () => {
 
   let win = new BrowserWindow({
     width: 1280,
-    height: 800,
+    height: 1000,
     frame: false
   })
 
@@ -46,6 +46,7 @@ const createMainWindow = () => {
   win.on('closed', onClosed)
   win.webContents.on('crashed', onCrash)
   win.on('unresponsive', onCrash)
+console.log(app.getLocale())
 
   return win
 }
@@ -163,7 +164,10 @@ const startup = (args:Array<string>) => {
     const platform = os.platform()
     const hostname = os.hostname()
     const user = username.sync()
-    const defaultLocale = app.getLocale()
+    //Hardcoded until other language packs are installed.
+    //Shell failed loading with DE environment
+    //const defaultLocale = app.getLocale()
+    const defaultLocale = 'en-US'
 
     return {
       app: {
