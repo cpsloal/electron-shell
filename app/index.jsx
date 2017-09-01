@@ -46,7 +46,6 @@ const createMainWindow = () => {
   win.on('closed', onClosed)
   win.webContents.on('crashed', onCrash)
   win.on('unresponsive', onCrash)
-console.log(app.getLocale())
 
   return win
 }

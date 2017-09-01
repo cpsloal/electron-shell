@@ -1,7 +1,11 @@
 {
   "name": "electron-shell-builder",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Build scripts for the extensible Electron-based shell",
+  "author": {
+    "name": "Andreas Gerlach",
+    "email": "andreas.gerlach@dieboldnixdorf.com"
+  },
   "main": "app/index.js",
   "private": true,
   "repository": {
@@ -13,7 +17,6 @@
     "react",
     "builder"
   ],
-  "author": "Andreas Gerlach",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appelgriebsch/electron-shell/issues"
@@ -72,8 +75,7 @@
       "packageCategory": "utils",
       "target": [
         "rpm",
-        "deb",
-        "portable"
+        "deb"
       ],
       "depends": []
     },

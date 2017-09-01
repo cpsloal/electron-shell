@@ -1,8 +1,12 @@
 {
   "name": "electron-shell",
   "productName": "Electron-Shell",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An extensible Electron-based shell",
+  "author": {
+    "name": "Andreas Gerlach",
+    "email": "andreas.gerlach@dieboldnixdorf.com"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -17,7 +21,6 @@
     "react",
     "plugins"
   ],
-  "author": "Andreas Gerlach",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appelgriebsch/electron-shell/issues"
